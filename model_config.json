@@ -1,0 +1,6 @@
+{
+  "hub_repo_id": "ro17/algorithmic-meme-stock-surge-analyst-model",
+  "hub_files": [
+    "hf_export/model.safetensors"
+  ]
+}
