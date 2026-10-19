@@ -1,19 +1,8 @@
 """
-FastAPI backend for the meme-stock sentiment model.
-
-This is the ONLY job of this file:
-  1. Load the BERT model + tokenizer once, when the server starts.
-  2. Expose a POST /predict endpoint: text in, {label, scores} JSON out.
-
-Concepts introduced here (explained inline as comments):
-  - FastAPI: a Python web framework. You write plain functions and decorate
-    them with @app.get(...) / @app.post(...) to turn them into HTTP endpoints.
-  - Pydantic models: classes that describe the *shape* of expected JSON, and
-    validate incoming requests automatically (reject bad input before your
-    code even runs).
-  - CORS: browsers block a webpage on one domain (yourapp.vercel.app) from
-    calling an API on a different domain (this Space) unless the API
-    explicitly allows it. CORSMiddleware below is what grants that permission.
+Rohin Vijay
+FastAPI backend for the meme-stock sentiment model
+--------------------------------
+Loads BERT and tokenizer once, when the server starts and exposes a POST /predict endpoint for making predictions
 """
 
 import model_setup
